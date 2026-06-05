@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://bbxq1dqtwxlxv"]
+
+[ext_resource type="Script" uid="uid://if1ab3u8udwl" path="res://scenes/hud.gd" id="1_ahhtf"]
+
+[node name="HUD" type="CanvasLayer" unique_id=330548607]
+script = ExtResource("1_ahhtf")
+
+[node name="Control" type="Control" parent="." unique_id=635158167]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SpeedPanel" type="PanelContainer" parent="Control" unique_id=1048174345]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1151.0
+offset_top = -95.0
+offset_right = -991.0
+offset_bottom = -15.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="SpeedLabel" type="Label" parent="Control/SpeedPanel" unique_id=1715911159]
+layout_mode = 2
+text = "0 km/h"
+
+[node name="TurboPanel" type="PanelContainer" parent="Control" unique_id=40177232]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 954.0
+offset_top = -103.0
+offset_right = 1154.0
+offset_bottom = -13.0
+grow_vertical = 0
+
+[node name="TurboLabel" type="Label" parent="Control/TurboPanel" unique_id=1444700309]
+layout_mode = 2
+text = "TURBO"
+
+[node name="TurboBar" type="ProgressBar" parent="Control/TurboPanel" unique_id=1197558018]
+layout_mode = 2
+
+[node name="DriftLabel" type="Label" parent="Control" unique_id=1599975687]
+visible = false
+layout_mode = 0
+offset_left = -60.0
+offset_top = 40.0
+offset_right = -11.0
+offset_bottom = 63.0
+text = "DRIFT!"
+horizontal_alignment = 1
